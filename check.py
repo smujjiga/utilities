@@ -108,7 +108,9 @@ if __name__ == "__main__":
         default=294,
     )
     parser.add_argument("--date", type=str, help="Default: Today", default=date)
-    parser.add_argument("--min_age_limit", type=int, help="Default: 18", default=18)
+    parser.add_argument(
+        "--min_age_limit", type=int, help="Default: 18 (use 45 or 18)", default=45
+    )
     parser.add_argument("--every_n_minutes", type=int, help="Default: 60", default=60)
     parser.add_argument(
         "--exact_date", action="store_true", help="Check exact date", default=False
