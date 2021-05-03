@@ -1,5 +1,5 @@
 # Common Utilities
-# **1. Covid Vaccination slot checker**
+# **1. Periodic Covid Vaccination slot checker**
 ### **File:** check.py
 ### **Requires:** Python (standard installation is sufficient)
 Usage: 
