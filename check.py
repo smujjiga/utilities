@@ -71,7 +71,7 @@ def check(district_id, date, age_limit=18, exact_date=False):
 
     for center in all_centers:
         for i, session in enumerate(center.sessions):
-            if session.min_age_limit <= age_limit:
+            if session.min_age_limit <= age_limit and session.available_capacity > 0:
                 if not exact_date or session.date == date:
                     count += 1
                     print(center.print(i))
